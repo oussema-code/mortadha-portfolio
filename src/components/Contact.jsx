@@ -56,30 +56,32 @@ export default function Contact() {
             <div className="space-y-4">
               <a
                 href={`mailto:${student.email}`}
-                className="group flex items-start gap-4 rounded-2xl border border-cream/[0.08] bg-cream/[0.03] p-5 transition-all hover:border-mint/30 hover:bg-cream/[0.06]"
+                className="group flex cursor-pointer items-center gap-4 rounded-2xl border border-cream/[0.08] bg-cream/[0.03] p-5 transition-all hover:-translate-y-1 hover:border-mint/40 hover:bg-cream/[0.08] hover:shadow-[0_4px_20px_rgba(76,154,106,0.15)]"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mint/15 text-mint transition-colors group-hover:bg-mint/25">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </div>
-                <div>
+                <div className="flex-1">
                   <p className="font-mono text-[11px] tracking-widest text-mint/80 uppercase">Email</p>
                   <p className="mt-0.5 text-sm leading-snug">{student.email}</p>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 -translate-x-2 text-mint/0 transition-all group-hover:translate-x-0 group-hover:text-mint"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
 
               <a
                 href={student.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-start gap-4 rounded-2xl border border-cream/[0.08] bg-cream/[0.03] p-5 transition-all hover:border-mint/30 hover:bg-cream/[0.06]"
+                className="group flex cursor-pointer items-center gap-4 rounded-2xl border border-cream/[0.08] bg-cream/[0.03] p-5 transition-all hover:-translate-y-1 hover:border-mint/40 hover:bg-cream/[0.08] hover:shadow-[0_4px_20px_rgba(76,154,106,0.15)]"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-mint/15 text-mint transition-colors group-hover:bg-mint/25">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                 </div>
-                <div>
+                <div className="flex-1">
                   <p className="font-mono text-[11px] tracking-widest text-mint/80 uppercase">LinkedIn</p>
                   <p className="mt-0.5 text-sm leading-snug">mortadha-ben-younes-enit</p>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 -translate-x-2 text-mint/0 transition-all group-hover:translate-x-0 group-hover:text-mint"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
 
               <div className="flex items-start gap-4 rounded-2xl border border-cream/[0.08] bg-cream/[0.03] p-5">
